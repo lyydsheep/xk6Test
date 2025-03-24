@@ -1,11 +1,7 @@
 import http from "k6/http";
 import alipay_signer from "k6/x/alipaySigner";
 import { uuidv4 } from "https://jslib.k6.io/k6-utils/1.4.0/index.js";
-
-// export const options = {
-//   vus: 1000, // Key for Smoke test. Keep it at 2, 3, max 5 VUs
-//   duration: "1m", // This can be shorter or just a few iterations
-// };
+import { check } from "k6";
 
 export default function () {
   const gateway = "http://47.86.177.131:18881";
@@ -30,7 +26,7 @@ export default function () {
         value: 100,
       },
       buyer: {
-        referenceBuyerId: "cidxxx",
+        referenceBuyerId: "cidtest_notify_session01",
         buyerName: {
           fullName: "fullName",
           firstName: "firstName",
@@ -40,7 +36,7 @@ export default function () {
         buyerRegistrationTime: "2019-11-27T12:01:01+08:00",
       },
       goods: {
-        referenceGoodsId: "001",
+        referenceGoodsId: "11451qwerqtwrq2wr",
         goodsName: "GoodsName",
         goodsQuantity: 1,
         deliveryMethodType: "DIGITAL",
@@ -76,10 +72,11 @@ export default function () {
     },
     subscription: {
       periodType: "MONTH",
-      activeTime: "2019-11-27T12:01:01+08:00",
+      activeTime: "2025-11-27T12:01:01+08:00",
     },
-    productScene: "DIRECT_PAYMENT",
+    productScene: "CHECKOUT_PAYMENT",
   });
+
   var headers = alipay_signer.genSignatureHeader(
     clientId,
     path,
@@ -93,4 +90,16 @@ export default function () {
   const res = http.post(url, jsonReq, param);
   console.log(res.body);
   console.log(res.status);
+
+  check(res, {
+    "status is 200": (r) => r.status === 200,
+    paymentSessionCreated: (r) => isFieldNotEmpty(r.json(), "normalUrl"),
+    statusSuccessful:(r)=> r.json().result.resultStatus==="S"
+  });
 }
+
+export function isFieldNotEmpty(obj, field) {
+  return obj.hasOwnProperty(field) && obj[field] !== null && obj[field] !== "";
+}
+
+
