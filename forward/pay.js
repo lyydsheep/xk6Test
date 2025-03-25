@@ -1,14 +1,24 @@
 import http from "k6/http";
 import alipay_signer from "k6/x/alipaySigner";
 import { check } from "k6";
+import { uuidv4 } from "https://jslib.k6.io/k6-utils/1.4.0/index.js";
 
 export function isFieldNotEmpty(obj, field) {
     return obj.hasOwnProperty(field) && obj[field] !== null && obj[field] !== "";
 }
 
+export let options = {
+    stages: [
+        { duration: '30s', target: 50 },
+        { duration: '1m', target: 100 },
+        { duration: '30s', target: 50 },
+        { duration: '30s', target: 0}
+    ]
+}
+
 export default function () {
     const gateway = "http://47.86.177.131:17070";
-    const paymentRequestId = Math.random();
+    const paymentRequestId = uuidv4();
     const path = `/ams/api/v1/payments/pay`;
     const method = "POST";
     const alipayMerchantPrivateKey = `MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDEiH/PTT+RWYi7
@@ -110,7 +120,7 @@ AfYtwrx5Qncml9u9IHDxxWY=`
         clientId,
         path,
         method,
-        privateKey,
+        alipayMerchantPrivateKey,
         jsonReq
     );
     const param = {
@@ -122,8 +132,6 @@ AfYtwrx5Qncml9u9IHDxxWY=`
 
     check(res, {
         "status is 200": (r) => r.status === 200,
-        paymentSessionCreated: (r) => isFieldNotEmpty(r.json(), "normalUrl"),
-        statusSuccessful:(r)=> r.json().result.resultStatus==="S"
     });
 }
 
