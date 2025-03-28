@@ -100,7 +100,7 @@ AfYtwrx5Qncml9u9IHDxxWY=`
             }
         },
         "paymentRedirectUrl": "http://www.yourRedirectUrl.com",
-        "paymentNotifyUrl": "http://47.86.177.132:17070/admin/test",
+        "paymentNotifyUrl": "http://www.yourRedirectUrl.com",
         "paymentFactor": {
             "captureMode": "AUTOMATIC",
             "isAuthorization": true
