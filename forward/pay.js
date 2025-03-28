@@ -100,7 +100,7 @@ AfYtwrx5Qncml9u9IHDxxWY=`
             }
         },
         "paymentRedirectUrl": "http://www.yourRedirectUrl.com",
-        "paymentNotifyUrl": "http://47.86.177.131:17070/test",
+        "paymentNotifyUrl": "http://47.86.177.132:17070/admin/test",
         "paymentFactor": {
             "captureMode": "AUTOMATIC",
             "isAuthorization": true
@@ -132,6 +132,8 @@ AfYtwrx5Qncml9u9IHDxxWY=`
 
     check(res, {
         "status is 200": (r) => r.status === 200,
+        checkStatus:(r) => r.json().result.ResultStatus === "U",
+        checkMessage: (r) => r.json().result.ResultMessage === "payment in process"
     });
 }
 
