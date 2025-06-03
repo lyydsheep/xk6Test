@@ -1,0 +1,34 @@
+app:
+  env: "dev"
+  name: "back"
+  log:
+    path: "./temp/log/message.log"
+    max_size: 100
+    max_age: 60
+  pagination:
+    default_size: 20
+    max_size: 100
+  port: 37139
+  AES_KEY: 13c48c6c2cb3238180cd59c25a74b1cc7f2955c105ae086bb8fcdb0a3ca1535a
+  # 邮件发送速率 1 ---> 每秒一封
+  rate: 1
+  event_bridge_url: "https://1457719373238802.eventbridge.ap-southeast-1.aliyuncs.com/webhook/putEvents?spm=5176.eventbridge-online.0.0.75b6549dUbAnl0&token=50f0e36f970745519f20316f8e98eee6114497de7a914ca4b4acb26b7bd6fa53511d469a25954c589bab419e0a182e07d694c32c7dc24abbb9ea236f489f0d68"
+  # 邮件发送成功率
+  down_rate: 95
+  up_rate: 97
+  speed_up_cron: "0 8 * * *"
+  speed_up_interval: 24
+database:
+  master:
+    type: "mysql"
+    dsn: "user02:%s@tcp(47.86.177.131:3306)/ccpay_02?charset=utf8mb4&parseTime=True&loc=Local"
+    password_file_path: "/Users/lyydsheep/db_password"
+    max_open: 100
+    max_idle: 10
+    max_life_time: 60
+mq:
+  ca_file_path: "/Users/lyydsheep/rabbitMQ/chained_server_ca_certificate.pem"
+  cer_file_path: "/Users/lyydsheep/rabbitMQ/client_crm.rabbitmq.rcc_certificate.pem"
+  key_file_path: "/Users/lyydsheep/rabbitMQ/client_crm.rabbitmq.rcc_key.pem"
+  url: "amqps://crmemail:%s@47.236.13.203:31051//payment"
+  password_file_path: "/Users/lyydsheep/rabbitMQ/password"

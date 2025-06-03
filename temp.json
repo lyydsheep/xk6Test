@@ -1,0 +1,45 @@
+{
+  "account": {
+    "id": 2223,
+    "uid": "5143848688508057227",
+    "cid": 2,
+    "payment_method": "CARD",
+    "payment_method_id": "",
+    "date": "2025-04-23T19:11:23-07:00",
+    "description": "Wan Pro Subscription (Billed Yearly) / User 5143848688508057227",
+    "Currency": "USD",
+    "amount_in": "6000",
+    "amount_out": "0",
+    "trans_id": "2_c76f5a19f9064419b63df3d4f77716fb",
+    "invoice_id": "2-5d09ac8d3c2244ffa6977c4a1420887d",
+    "refund_id": "",
+    "Status": "PAID",
+    "Valid": "0",
+    "payment_id": "20250424194010800100188130290557213",
+    "country": "US",
+    "CardBrand": "VISA",
+    "autoRenewal": 0
+  },
+  "good_items": [
+    {
+      "goods_id": "yearly-pro-continuous",
+      "goods_name": "Wan Pro Subscription (Billed Yearly)",
+      "goods_category": "Hosting",
+      "period_type": "YEAR"
+    }
+  ],
+  "user": {
+    "Id": 744,
+    "Uid": "5143848688508057227",
+    "Cid": 2,
+    "FirstName": "William",
+    "MiddleName": "",
+    "LastName": "Gray",
+    "FullName": "William Gray",
+    "Email": "lyd477061@alibaba-inc.com",
+    "Country": "",
+    "DefaultPaymentMethodId": "paymentMethod-cc3bd1b73503445397ec25aaa7d7a2c8",
+    "GmtCreate": "2025-04-24T02:10:02.4Z",
+    "GmtUpdate": "2025-04-24T02:11:21.628Z"
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "headers": {
+    "access-control-allow-origin": "*",
+    "access-control-expose-headers": "*",
+    "connection": "keep-alive",
+    "content-type": "application/json;charset=utf-8",
+    "date": "Tue, 13 May 2025 11:16:17 GMT",
+    "keep-alive": "timeout=25",
+    "vary": "Accept-Encoding",
+    "x-acs-request-id": "F4A9C191-E10D-33CB-A5D4-834F554BCBBB",
+    "x-acs-trace-id": "9f6b9f555a9b38fd3febae8873e7685d"
+  },
+  "statusCode": 200,
+  "body": {
+    "NextStart": "5f7b268911#203#newsletter@newsletter.wan.video-1747134943#entertainmentmohangiri@gmail.com.8000000096197672516",
+    "RequestId": "F4A9C191-E10D-33CB-A5D4-834F554BCBBB",
+    "data": {
+      "mailDetail": [
+        {
+          "AccountName": "newsletter@newsletter.wan.video",
+          "ErrorClassification": "SendOk",
+          "LastUpdateTime": "1747134973000",
+          "Message": "250 Send Mail OK",
+          "Status": 0,
+          "Subject": "Wan Service Upgrade: Enjoy Faster Generation and More Features with Membership Plan",
+          "ToAddress": "entrepriserich@gmail.com",
+          "UtcLastUpdateTime": "1747134973"
+        },
+        {
+          "AccountName": "newsletter@newsletter.wan.video",
+          "ErrorClassification": "SendOk",
+          "LastUpdateTime": "1747134970000",
+          "Message": "250 Send Mail OK",
+          "Status": 0,
+          "Subject": "Wan Service Upgrade: Enjoy Faster Generation and More Features with Membership Plan",
+          "ToAddress": "entrepriseacces@gmail.com",
+          "UtcLastUpdateTime": "1747134970"
+        },
+        {
+          "AccountName": "newsletter@newsletter.wan.video",
+          "ErrorClassification": "SendOk",
+          "LastUpdateTime": "1747134967000",
+          "Message": "250 Send Mail OK",
+          "Status": 0,
+          "Subject": "Wan Service Upgrade: Enjoy Faster Generation and More Features with Membership Plan",
+          "ToAddress": "entrepreneurcambia@gmail.com",
+          "UtcLastUpdateTime": "1747134967"
+        },
+        {
+          "AccountName": "newsletter@newsletter.wan.video",
+          "ErrorClassification": "SendOk",
+          "LastUpdateTime": "1747134964000",
+          "Message": "250 Send Mail OK",
+          "Status": 0,
+          "Subject": "Wan Service Upgrade: Enjoy Faster Generation and More Features with Membership Plan",
+          "ToAddress": "entregamilionaria@gmail.com",
+          "UtcLastUpdateTime": "1747134964"
+        },
+        {
+          "AccountName": "newsletter@newsletter.wan.video",
+          "ErrorClassification": "SendOk",
+          "LastUpdateTime": "1747134961000",
+          "Message": "250 Send Mail OK",
+          "Status": 0,
+          "Subject": "Wan Service Upgrade: Enjoy Faster Generation and More Features with Membership Plan",
+          "ToAddress": "entissutisna1781@gmail.com",
+          "UtcLastUpdateTime": "1747134961"
+        },
+        {
+          "AccountName": "newsletter@newsletter.wan.video",
+          "ErrorClassification": "SendOk",
+          "LastUpdateTime": "1747134958000",
+          "Message": "250 Send Mail OK",
+          "Status": 0,
+          "Subject": "Wan Service Upgrade: Enjoy Faster Generation and More Features with Membership Plan",
+          "ToAddress": "entisnela01@gmail.com",
+          "UtcLastUpdateTime": "1747134958"
+        },
+        {
+          "AccountName": "newsletter@newsletter.wan.video",
+          "ErrorClassification": "SendOk",
+          "LastUpdateTime": "1747134955000",
+          "Message": "250 Send Mail OK",
+          "Status": 0,
+          "Subject": "Wan Service Upgrade: Enjoy Faster Generation and More Features with Membership Plan",
+          "ToAddress": "entfunhk@gmail.com",
+          "UtcLastUpdateTime": "1747134955"
+        },
+        {
+          "AccountName": "newsletter@newsletter.wan.video",
+          "ErrorClassification": "SendOk",
+          "LastUpdateTime": "1747134952000",
+          "Message": "250 Send Mail OK",
+          "Status": 0,
+          "Subject": "Wan Service Upgrade: Enjoy Faster Generation and More Features with Membership Plan",
+          "ToAddress": "entezarhozoury@gmail.com",
+          "UtcLastUpdateTime": "1747134952"
+        },
+        {
+          "AccountName": "newsletter@newsletter.wan.video",
+          "ErrorClassification": "SendOk",
+          "LastUpdateTime": "1747134949000",
+          "Message": "250 Send Mail OK",
+          "Status": 0,
+          "Subject": "Wan Service Upgrade: Enjoy Faster Generation and More Features with Membership Plan",
+          "ToAddress": "entespam@gmail.com",
+          "UtcLastUpdateTime": "1747134949"
+        },
+        {
+          "AccountName": "newsletter@newsletter.wan.video",
+          "ErrorClassification": "SendOk",
+          "LastUpdateTime": "1747134946000",
+          "Message": "250 Send Mail OK",
+          "Status": 0,
+          "Subject": "Wan Service Upgrade: Enjoy Faster Generation and More Features with Membership Plan",
+          "ToAddress": "entertimes980@gmail.com",
+          "UtcLastUpdateTime": "1747134946"
+        }
+      ]
+    }
+  }
+}

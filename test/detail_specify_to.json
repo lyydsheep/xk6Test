@@ -1,0 +1,122 @@
+{
+  "headers": {
+    "access-control-allow-origin": "*",
+    "access-control-expose-headers": "*",
+    "connection": "keep-alive",
+    "content-type": "application/json;charset=utf-8",
+    "date": "Tue, 13 May 2025 11:23:54 GMT",
+    "keep-alive": "timeout=25",
+    "vary": "Accept-Encoding",
+    "x-acs-request-id": "B66982FE-C3F3-3691-A012-12E4054727D1",
+    "x-acs-trace-id": "3ea3311983ab91429813c0b2973570c6"
+  },
+  "statusCode": 200,
+  "body": {
+    "NextStart": "5f7b268911#202#lyd477061@alibaba-inc.com-1746599358#lyd477061@alibaba-inc.com.576461125055516984",
+    "RequestId": "B66982FE-C3F3-3691-A012-12E4054727D1",
+    "data": {
+      "mailDetail": [
+        {
+          "AccountName": "system@notice.wan.video",
+          "ErrorClassification": "SendOk",
+          "LastUpdateTime": "1746612658000",
+          "Message": "250 Send Mail OK",
+          "Status": 0,
+          "Subject": "Your Credit Code Has Been Sent – Thank You for Choosing wan.video!",
+          "ToAddress": "lyd477061@alibaba-inc.com",
+          "UtcLastUpdateTime": "1746612658"
+        },
+        {
+          "AccountName": "system@notice.wan.video",
+          "ErrorClassification": "SendOk",
+          "LastUpdateTime": "1746612617000",
+          "Message": "250 Send Mail OK",
+          "Status": 0,
+          "Subject": "Your Credit Code Has Been Sent – Thank You for Choosing wan.video!",
+          "ToAddress": "lyd477061@alibaba-inc.com",
+          "UtcLastUpdateTime": "1746612617"
+        },
+        {
+          "AccountName": "system@notice.wan.video",
+          "ErrorClassification": "SendOk",
+          "LastUpdateTime": "1746599955000",
+          "Message": "250 Send Mail OK",
+          "Status": 0,
+          "Subject": "Your Credit Code Has Been Sent – Thank You for Choosing wan.video!",
+          "ToAddress": "lyd477061@alibaba-inc.com",
+          "UtcLastUpdateTime": "1746599955"
+        },
+        {
+          "AccountName": "system@notice.wan.video",
+          "ErrorClassification": "SendOk",
+          "LastUpdateTime": "1746599955000",
+          "Message": "250 Send Mail OK",
+          "Status": 0,
+          "Subject": "Your Credit Code Has Been Sent – Thank You for Choosing wan.video!",
+          "ToAddress": "lyd477061@alibaba-inc.com",
+          "UtcLastUpdateTime": "1746599955"
+        },
+        {
+          "AccountName": "system@notice.wan.video",
+          "ErrorClassification": "SendOk",
+          "LastUpdateTime": "1746599497000",
+          "Message": "250 Send Mail OK",
+          "Status": 0,
+          "Subject": "Your Credit Code Has Been Sent – Thank You for Choosing wan.video!",
+          "ToAddress": "lyd477061@alibaba-inc.com",
+          "UtcLastUpdateTime": "1746599497"
+        },
+        {
+          "AccountName": "system@notice.wan.video",
+          "ErrorClassification": "SendOk",
+          "LastUpdateTime": "1746599497000",
+          "Message": "250 Send Mail OK",
+          "Status": 0,
+          "Subject": "Your Credit Code Has Been Sent – Thank You for Choosing wan.video!",
+          "ToAddress": "lyd477061@alibaba-inc.com",
+          "UtcLastUpdateTime": "1746599497"
+        },
+        {
+          "AccountName": "system@notice.wan.video",
+          "ErrorClassification": "SendOk",
+          "LastUpdateTime": "1746599497000",
+          "Message": "250 Send Mail OK",
+          "Status": 0,
+          "Subject": "Your Credit Code Has Been Sent – Thank You for Choosing wan.video!",
+          "ToAddress": "lyd477061@alibaba-inc.com",
+          "UtcLastUpdateTime": "1746599497"
+        },
+        {
+          "AccountName": "system@notice.wan.video",
+          "ErrorClassification": "SendOk",
+          "LastUpdateTime": "1746599497000",
+          "Message": "250 Send Mail OK",
+          "Status": 0,
+          "Subject": "Your Credit Code Has Been Sent – Thank You for Choosing wan.video!",
+          "ToAddress": "lyd477061@alibaba-inc.com",
+          "UtcLastUpdateTime": "1746599497"
+        },
+        {
+          "AccountName": "system@notice.wan.video",
+          "ErrorClassification": "SendOk",
+          "LastUpdateTime": "1746599497000",
+          "Message": "250 Send Mail OK",
+          "Status": 0,
+          "Subject": "Your Credit Code Has Been Sent – Thank You for Choosing wan.video!",
+          "ToAddress": "lyd477061@alibaba-inc.com",
+          "UtcLastUpdateTime": "1746599497"
+        },
+        {
+          "AccountName": "system@notice.wan.video",
+          "ErrorClassification": "SendOk",
+          "LastUpdateTime": "1746599358000",
+          "Message": "250 Send Mail OK",
+          "Status": 0,
+          "Subject": "Your Credit Code Has Been Sent – Thank You for Choosing wan.video!",
+          "ToAddress": "lyd477061@alibaba-inc.com",
+          "UtcLastUpdateTime": "1746599358"
+        }
+      ]
+    }
+  }
+}

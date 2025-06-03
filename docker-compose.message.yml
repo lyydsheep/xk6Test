@@ -1,0 +1,36 @@
+version: '3.8'
+
+secrets:
+  db_password:
+    file: ./db_password
+  ca_file_path:
+    file: "/root/mq/rabbitMQ/chained_server_ca_certificate.pem"
+  cer_file_path:
+    file: "/root/mq/rabbitMQ/client_crm.rabbitmq.rcc_certificate.pem"
+  key_file_path:
+    file: "/root/mq/rabbitMQ/client_crm.rabbitmq.rcc_key.pem"
+  password_file_path:
+    file: "/root/mq/rabbitMQ/password"
+
+services:
+  message:
+    container_name: message
+    image:  message:v0.1.2025052601
+    restart: unless-stopped
+    build: .
+    network_mode: host
+    volumes:
+      - /root/message:/app/temp/log
+    environment:
+      ENV: prod
+    secrets:
+      - source: db_password
+        target: /db_password
+      - source: ca_file_path
+        target: /chained_server_ca_certificate.pem
+      - source: cer_file_path
+        target: /client_crm.rabbitmq.rcc_certificate.pem
+      - source: key_file_path
+        target: /client_crm.rabbitmq.rcc_key.pem
+      - source: password_file_path
+        target: /password
